@@ -1,62 +1,63 @@
-html,body {
+html, body {
     width: 100%;
     height: 100%;
     padding: 0px;
     margin: 0px;
+    font-family: sans-serif;
 }
 
 nav {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
-    padding: 10px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px 0;
     z-index: 10;
+    background-color: rgb(219, 164, 164);
 }
 
-.logo{
-    align-items: left;
+.logo {
+    padding: 10px;
+    height: 75px; 
+    width: 75px;
 }
 
 nav ul {
     display: inline-flex;
     text-align: right;
+    margin-right: 20px;
 }
 
 nav ul li {
-    padding: 10px;
     list-style: none;
-    display: inline;
-    text-align: right;
+    display: flex;
 }
 
-a {
+nav a {
     text-decoration: none;
-    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    padding: 40px 40px;
 }
 
-header {
-    background-color: rgb(150, 182, 197);
-    padding: 200px;
-    border: 2px solid #1C6EA4;
+nav ul a:hover {
+    background-color: rgb(33, 33, 33);
+    transition: 0.3s;
 }
 
 main {
     background-color: rgb(173, 196, 206);
     padding: 200px;
-    border: 2px solid #1C6EA4;
 }
 
 section {
     background-color: rgb(238, 224, 201);
     padding: 200px;
-    border: 2px solid #1C6EA4;
 }
 
 footer {
     background-color: rgb(241, 240, 232);
     padding: 100px;
-    border: 2px solid #1C6EA4;
 }
