@@ -1,0 +1,139 @@
+/* RESETS */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/* GLOBAL CLASSES */
+.text-center {
+    text-align: center;
+}
+
+/* HEADER STYLES */
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 3%;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+/* nav a:not(:last-child) {
+    margin-right: 10px;
+} */
+
+.nav-links {
+    padding-right: 3%;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    padding: 40px ;
+}
+
+nav a:hover {
+    background-color: rgb(112, 112, 112, 0.4);
+    transition: 0.5s;
+}
+
+/* HERO STYLES */
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/img/diamonds.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 54px;
+}
+
+.store-hours {
+    font-size: 36px;
+    position: relative;
+    margin-top: 5%;
+}
+
+.hours {
+    font-size: 24px;
+    list-style: none;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.hours li {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* MAIN STYLES */
+main {
+    background-color: rgb(238, 224, 201);
+    padding: 200px;
+    display: none;
+}
+
+/* FOOTER STYLES */
+footer {
+    background-color: rgb(241, 240, 232);
+    padding: 100px;
+    display: none;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 750px) {
+    .logo {
+        font-size: 12px;
+        text-align: center;
+    }
+    .nav-links {
+        font-size: 12px;
+        justify-content: space-between;
+    }
+    .hero h1 {
+        font-size: 42px;
+        padding-top: 40%;
+    }
+    .store-hours {
+        font-size: 24px;
+    }
+    .hours {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 750px) {
+    .logo {
+        font-size: 12px;
+        text-align: center;
+    }
+    .hero h1 {
+        padding-top: 40%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .hero h1 {
+        padding-top: 25%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .hero h1 {
+        padding-top: 15%;
+    }
+}
