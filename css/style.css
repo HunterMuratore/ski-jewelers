@@ -5,9 +5,26 @@
     font-family: sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/img/diamonds.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* GLOBAL CLASSES */
 .text-center {
     text-align: center;
+}
+
+.section-padding {
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 /* HEADER STYLES */
@@ -23,7 +40,7 @@ header {
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 16px;
     text-align: center;
     color: white;
 }
@@ -42,34 +59,55 @@ nav a {
     text-align: center;
     color: white;
     padding: 40px ;
+    transition: 0.5s ease-in-out;
 }
 
 nav a:hover {
     background-color: rgb(112, 112, 112, 0.4);
-    transition: 0.5s;
 }
 
 /* HERO STYLES */
-.hero{
-    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/img/diamonds.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    /* height: 100vh; */
     color: white;
 }
 
 .hero h1 {
-    font-size: 54px;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.hero h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    margin-top: 25px;
+}
+
+.map-link a {
+    color: rgb(175, 248, 224);
+}
+
+/* .map:hover {
+    cursor: pointer;
+} */
+
+.hero hr {
+    width: 75%;
+    border-radius: 80%;
+    margin: 5% auto;
 }
 
 .store-hours {
-    font-size: 36px;
-    position: relative;
-    margin-top: 5%;
+    font-size: 24px;
 }
 
 .hours {
-    font-size: 24px;
+    margin-top: 2%;
+    font-size: 16px;
     list-style: none;
     text-align: left;
     justify-content: space-between;
@@ -78,6 +116,16 @@ nav a:hover {
 .hours li {
     margin-top: 10px;
     text-align: center;
+}
+
+#contact h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+#contact h4 {
+    margin: 3% 0;
+    font-size: 16px;
 }
 
 /* MAIN STYLES */
@@ -95,45 +143,40 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 750px) {
-    .logo {
-        font-size: 12px;
-        text-align: center;
-    }
-    .nav-links {
-        font-size: 12px;
-        justify-content: space-between;
-    }
+@media (min-width: 950px) { 
     .hero h1 {
-        font-size: 42px;
-        padding-top: 40%;
+        font-size: 32px;
     }
-    .store-hours {
-        font-size: 24px;
-    }
-    .hours {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 750px) {
-    .logo {
-        font-size: 12px;
-        text-align: center;
-    }
-    .hero h1 {
-        padding-top: 40%;
-    }
-}
-
-@media (min-width: 1000px) {
-    .hero h1 {
-        padding-top: 25%;
+    .hero h2 {
+        font-size: 28px;
     }
 }
 
 @media (min-width: 1500px) {
+    .logo {
+        font-size: 24px;
+        text-align: center;
+    }
+    .nav-links {
+        font-size: 24px;
+        justify-content: space-between;
+    }
     .hero h1 {
-        padding-top: 15%;
+        font-size: 42px;
+    }
+    .hero h2 {
+        font-size: 32px;
+    }
+    .store-hours {
+        font-size: 36px;
+    }
+    .hours {
+        font-size: 24px;
+    }
+    #contact h3 {
+        font-size: 36px;
+    }
+    #contact h4 {
+        font-size: 24px;
     }
 }
