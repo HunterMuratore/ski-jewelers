@@ -1,50 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Ski Jewelers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style-test.css">
 </head>
-<body>
-    <header class="header">    
-        <div class="logo">SKI JEWELERS</div>
-        <nav class="nav-links">
-            <a href="#contact">Contact Us!</a>
-        </nav>  
-    </header>
-
-    <seciton class="hero text-center section-padding">
-        <h1>Ski Jewelers was founded over 50 years ago, our high standard of craftsmanship and integrity, has built a strong relationship with our customers. Our family owned business is built on trust and quality. Whether it is a small repair to a total redesign, Ski Jewelers completes the job right on our own premises. Our store offers one of the largest selections of fine jewelry in the area.</h1>
-        <h2>Come visit us today!</h2>
-        <h2 class="map-link"><a href="https://maps.app.goo.gl/9MfroynyKgBuxPeS9" target="_blank">299 Route 22 East - Green Brook, NJ 08812</a></h2>
-        <hr>
-        <div class="store-hours">
-            <h3>Store Hours:</h3>
-            <ul class="hours">
-                <li>Monday: CLOSED</li>
-                <li>Tuesday: 10:00 AM - 5:00 PM</li>
-                <li>Wednesday: 10:00 AM - 7:00 PM</li>
-                <li>Thursday: 10:00 AM - 7:00 PM</li>
-                <li>Friday: 10:00 AM - 7:00 PM</li>
-                <li>Saturday: 10:00 AM - 5:00 PM</li>
-                <li>Sunday: CLOSED</li>
-            </ul>
+<body class="d-flex flex-column h-100">   
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ski Jewelers</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto text-center">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
         </div>
-        <hr>
-        <div id="contact">
+    </nav>
+
+    <main class="container-fluid mt-5">
+        <div class="row"> <!-- Use col and col-sm/md/lg to set sections here -->
+            <section id="home" class="d-flex flex-column text-center section-padding">
+                <h1>Ski Jewelers was founded over 50 years ago, our high standard   of    craftsmanship and integrity, has built a strong relationship    with our  customers. Our family owned business is built on trust and   quality.  Whether it is a small repair to a total redesign, Ski   Jewelers completes     the job right on our own premises. Our store   offers one of the largest  selections of fine jewelry in the area.</h1>
+                <h2>Come visit us today!</h2>
+                <h2 class="map-link"><a href="https://maps.app.goo.gl/  9MfroynyKgBuxPeS9"    target="_blank">299 Route 22 East - Green   Brook, NJ 08812</a></h2>
+                <hr>
+            </section>
+            <section id="about" class="d-flex flex-column text-center   section-padding">
+                <h3>Store Hours:</h3>
+                <ul class="hours list-unstyled">
+                    <li>Monday: CLOSED</li>
+                    <li>Tuesday: 10:00 AM - 5:00 PM</li>
+                    <li>Wednesday: 10:00 AM - 7:00 PM</li>
+                    <li>Thursday: 10:00 AM - 7:00 PM</li>
+                    <li>Friday: 10:00 AM - 7:00 PM</li>
+                    <li>Saturday: 10:00 AM - 5:00 PM</li>
+                    <li>Sunday: CLOSED</li>
+                </ul>
+                <hr>
+            </section>
+        </div>
+        <section id="contact" class="d-flex flex-column text-center section-padding">
             <h3>Contact Us:</h3>
-            <h4>Email: <u><a href="mailto:INFO@SKIJEWELERS.COM" target="_blank">INFO@SKIJEWELERS.COM</a></u></h4>
+            <h4>Email: <u><a href="mailto:INFO@SKIJEWELERS.COM"    target="_blank">INFO@SKIJEWELERS.COM</a></u></h4>
             <h4>Phone: <u><a href="tel:7327526446">(732) 752-6446</a></u></h4>
-            <h4>FaceBook: <u><a href="https://www.facebook.com/ski.jewelers/" target="_blank">Ski Jewelers</a></u></h4>
-        </div>
-    </section>
-    <main>
-
+            <h4>FaceBook: <u><a href="https://www.facebook.com/ski.jewelers"   target="_blank">Ski Jewelers</a></u></h4>
+        </section>
     </main>
 
     <footer>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/img/diamonds.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(175, 248, 224);
+}
+
+#home h1 {
+    line-height: 1.4;
+}
+
+hr {
+    width: 75%;
+    border-radius: 60%;
+    border-color: #fff;
+    margin: 5% auto;
+}
+
+li:not(:last-child) {
+    margin-bottom: 5px;
+}
