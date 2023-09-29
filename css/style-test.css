@@ -17,6 +17,16 @@ body {
     margin-right: 20px
 }
 
+.navbar button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 a {
     text-decoration: none;
     color: rgb(175, 248, 224);
@@ -48,6 +58,14 @@ h3 {
 
 .store-hours {
     font-size: 22px;
+}
+
+.modal-content {
+    background-color: rgb(22, 22, 22);
+}
+
+.modal-content p {
+    font-size: 24px;
 }
 
 @media (max-width: 1000px) { 
