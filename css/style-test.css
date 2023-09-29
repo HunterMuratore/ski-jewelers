@@ -1,0 +1,50 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/img/diamonds.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(3, 3, 3);
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(175, 248, 224);
+}
+
+.section-padding {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+#home h1 {
+    line-height: 1.4;
+}
+
+hr {
+    width: 75%;
+    border-radius: 60%;
+    border-color: #fff;
+    margin: 5% auto;
+}
+
+li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+.store-hours {
+    font-size: 22px;
+}
+
+#contact {
+    line-height: 2.5;
+}
