@@ -17,8 +17,8 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <div class="navbar-nav ms-auto text-center">
-                <div class="nav-item dropdown">
+            <div class="navbar-nav d-flex align-items-center ms-auto text-center">
+                <div class="nav-item dropdown me-2">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Gift Ideas
                     </a>
@@ -28,10 +28,21 @@
                       <a class="dropdown-item" href="#">Anniversary Gifts By Year</a>
                     </div>
                 </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#">Specials</a>
+                <div class="nav-item me-2">
+                    <a class="nav-link" href="#">                        
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#specialsBackdrop">
+                            Specials
+                        </button>  
+                    </a>
                 </div>
-                <div class="nav-item">
+                <div class="nav-item me-2">
+                    <a class="nav-link" href="#">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#aboutBackdrop">
+                            About Us
+                        </button>      
+                    </a>                
+                </div>
+                <div class="nav-item me-2">
                     <a class="nav-link" href="#contact">Contact</a>
                 </div>
             </div>
@@ -42,8 +53,7 @@
     <main class="container-fluid mt-5">
         <div class="row"> <!-- Use col and col-sm/md/lg to set sections here -->
             <section id="home" class="d-flex flex-column text-center section-padding mt-5">
-                <h1>Ski Jewelers was founded over 50 years ago, our high standard   of    craftsmanship and integrity, has built a strong relationship    with our  customers. Our family owned business is built on trust and   quality.  Whether it is a small repair to a total redesign, Ski   Jewelers completes     the job right on our own premises. Our store   offers one of the largest  selections of fine jewelry in the area.</h1>
-                <h2>Come visit us today!</h2>
+                <h1>Call To Action</h1>
                 <h2 class="map-link mt-3"><a href="https://maps.app.goo.gl/9MfroynyKgBuxPeS9" target="_blank">299 Route 22 East - Green   Brook, NJ 08812 <i class="fa-solid fa-map-pin fa-bounce fa-xs" style="color: #fff;"></i></a></h2>
                 <hr>
             </section>
@@ -68,6 +78,46 @@
             <h4 class="mt-2">FaceBook: <u><a href="https://www.facebook.com/ski.jewelers" target="_blank">Ski Jewelers</a></u></h4>
         </section>
     </main>
+
+    <div class="modal fade" id="specialsBackdrop" tabindex="-1" aria-labelledby="specialsBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="specialsBackdropLabel">About Ski Jewelers</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <h1>Specials</h1>
+                <p>All watches 30% off</p>
+                <p class="" style="font-style: italic;">excludes antiques</p>
+                <p>20% off ALL silver jewelery</p>
+                <p>Stone Of The Month: Pink tourmaline and opal 20% off</p>
+                <p>Come in and fill out a wish list to get a $10 coupon!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="aboutBackdrop" tabindex="-1" aria-labelledby="aboutBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="aboutBackdropLabel">About Ski Jewelers</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <p>Ski Jewelers was founded over 50 years ago. Our high standard   of    craftsmanship and integrity, has built a strong relationship    with our  customers. Our family owned business is built on trust and   quality.  Whether it is a small repair to a total redesign, Ski   Jewelers completes     the job right on our own premises. Our store   offers one of the largest  selections of fine jewelry in the area.</p>
+                <p>Visit us today!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
 
     <footer>
 
