@@ -1,10 +1,20 @@
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/img/diamonds.jpg);
+    background-image: linear-gradient(rgba(3, 3, 3, .7), rgba(3, 3, 3, .7)), url(/assets/img/diamonds.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(3, 3, 3);
     color: #fff;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+.navbar .collapse {
+    font-size: 22px;
+    margin-right: 20px
 }
 
 a {
@@ -15,11 +25,6 @@ a {
 .section-padding {
     padding-left: 12%;
     padding-right: 12%;
-}
-
-.navbar {
-    position: fixed;
-    width: 100%;
 }
 
 #home h1 {
@@ -45,6 +50,9 @@ h3 {
     font-size: 22px;
 }
 
-#contact {
-    line-height: 2.5;
+@media (max-width: 1000px) { 
+    .navbar .collapse {
+        font-size: 18px;
+        margin-right: 0
+    }
 }
