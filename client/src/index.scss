@@ -1,0 +1,115 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* VARIABLES */
+$theme-dark: #212121;
+$theme-med: #323232;
+$theme-accent: #38c1c6;
+$theme-text: #EEEEEE;
+$main-padding: 0 5%;
+
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.4;
+  font-family: sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+  color: $theme-text;
+}
+
+/* GLOBAL CLASSES */
+body {
+  background-color: $theme-dark;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 0 2%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-padding {
+    padding: $main-padding;
+}
+
+.my-btn {
+    background-color: darken($theme-accent, 10%);
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: darken($theme-accent, 18%);
+    }
+}
+
+/* CUSTOM CLASSES */
+header {
+  background-color: $theme-accent;
+
+  nav {
+    :not(:last-child) {
+      margin-right: 15px;
+    }
+
+    :hover,
+    .active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.home {
+  hr {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    height: 1px;
+    border: none;
+  }
+
+  img {
+    border-radius: 6px;
+  }
+
+  i {
+    color: $theme-accent;
+  }
+}
+
+.contact {
+  input {
+    color: #000;
+  }
+
+  #message {
+    border: $theme-med solid 4px;
+    color: $theme-text;
+    background-color: darken($theme-med, 8%);
+  }
+}
+
+.about {
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  p {
+    font-size: 11px;
+  }
+}

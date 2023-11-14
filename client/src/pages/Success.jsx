@@ -1,7 +1,9 @@
 function Success() {
     return (
         <>
-            <h1>Success</h1>
+            <section className="main-padding">
+                
+            </section>
         </>
     )
 }

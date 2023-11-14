@@ -1,4 +1,4 @@
-function About() {
+function Specials() {
     return (
         <>
             <section className="main-padding">
@@ -8,4 +8,4 @@ function About() {
     )
 }
 
-export default About
+export default Specials
