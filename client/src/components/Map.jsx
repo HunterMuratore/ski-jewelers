@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+import { useMediaQuery } from 'react-responsive';
 import { useJsApiLoader, GoogleMap, Marker } from '@react-google-maps/api'
 
 const fontAwesomeMarkerSVG = `
@@ -17,6 +18,14 @@ function Map() {
         googleMapsApiKey: import.meta.env.VITE_REACT_APP_GOOGLE_MAPS_API_KEY
     })
 
+    const isMobile = useMediaQuery({ query: '(max-width: 550px)' });
+
+    const mapContainerStyle = {
+        width: isMobile ? '325px' : '400px',
+        height: isMobile ? '325px' : '400px',
+        margin: '0 auto'
+    };
+
     useEffect(() => {
         if (isLoaded) {
             setIsMapLoaded(true);
@@ -26,11 +35,11 @@ function Map() {
     return (
         <>
             {!isMapLoaded ? <i className="fa-solid fa-spinner fa-spin"></i> : (
-                <GoogleMap center={center} zoom={18} mapContainerStyle={{ width: '400px', height: '400px' }}>
+                <GoogleMap center={center} zoom={18} mapContainerStyle={mapContainerStyle}>
                     <Marker
                         position={center}
                         icon={{
-                            url: `data:image/svg+xml,${encodeURIComponent(fontAwesomeMarkerSVG)}`,
+                            url: `data:image/svg+xml,${fontAwesomeMarkerSVG}`,
                             scaledSize: new window.google.maps.Size(30, 30),
                         }}></Marker>
                 </GoogleMap>
