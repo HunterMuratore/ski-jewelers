@@ -1,10 +1,8 @@
 function Gifts() {
     return (
-        <>
-            <section className="main-padding">
+        <section className="gifts main-padding">
 
-            </section>
-        </>
+        </section>
     )
 }
 

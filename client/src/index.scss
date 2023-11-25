@@ -60,14 +60,17 @@ a {
 
 /* CUSTOM CLASSES */
 header {
-  background-color: $theme-accent;
+  box-shadow: -1px 1px 6px rgba(255, 255, 255, .3);
 
   nav {
+    z-index: 100;
+    background-color: $theme-accent;
+    border: 1px solid $theme-dark;
+
     :not(:last-child) {
       margin-right: 15px;
     }
 
-    :hover,
     .active {
       text-decoration: underline;
     }
@@ -100,16 +103,47 @@ header {
     color: $theme-text;
     background-color: darken($theme-med, 8%);
   }
+
+  h3 {
+    text-decoration: underline;
+  }
+
+  .Toastify__toast-container > * {
+    background-color: $theme-med;
+    color: $theme-text;
+
+    &:first-child {
+      margin-top: 14%;
+    }
+    
+    button {
+      color: #fff;
+    }
+  }
 }
 
 .about {
-  p {
-    margin-bottom: 10px;
+  .person-card {
+    background-color: darken($theme-med, 5%);
+    border-radius: 2%;
+    border: lighten($theme-med, 5%) solid 4px;
+    height: 400px;
+    width: 300px;
+
+    .person-img {
+      height: 225px;
+      border-radius: 2%;
+      border: lighten($theme-med, 5%) solid 1px;
+    }
   }
 }
 
 footer {
   p {
-    font-size: 11px;
+    font-size: 12px;
+    
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
   }
 }

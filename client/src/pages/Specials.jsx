@@ -1,10 +1,47 @@
+const specials = {
+    january: {
+
+    },
+    february: {
+
+    },
+    march: {
+
+    },
+    april: {
+
+    },
+    may: {
+
+    },
+    june: {
+
+    },
+    july: {
+
+    },
+    august: {
+
+    },
+    september: {
+
+    },
+    october: {
+
+    },
+    november: {
+
+    },
+    december: {
+
+    }
+}
+
 function Specials() {
     return (
-        <>
-            <section className="main-padding">
+        <section className="specials main-padding">
 
-            </section>
-        </>
+        </section>
     )
 }
 

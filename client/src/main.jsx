@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import "react-toastify/dist/ReactToastify.css";
 import './index.scss'
 
 import {BrowserRouter as Router} from 'react-router-dom'
