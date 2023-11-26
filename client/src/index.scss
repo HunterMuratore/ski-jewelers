@@ -91,6 +91,21 @@ header {
   i {
     color: $theme-accent;
   }
+
+  .map-link a {
+    color: $theme-accent;
+    text-decoration: underline;
+
+    .pin-icon {
+      color: $theme-text;
+    }
+  }
+
+  .dropdown {
+    :hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .contact {
