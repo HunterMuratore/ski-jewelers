@@ -17,7 +17,7 @@ const hours = [
 
 function Home() {
     const [currentHours, setCurrentHours] = useState('')
-    const [showDropdown, setShowDropdown] = useState(true)
+    const [showDropdown, setShowDropdown] = useState(false)
 
     useEffect(() => {
         const today = new Date().toLocaleDateString('en-US', { weekday: 'long' })
