@@ -67,6 +67,10 @@ header {
     background-color: $theme-accent;
     border: 1px solid $theme-dark;
 
+    img {
+      height: 50px;
+    }
+
     :not(:last-child) {
       margin-right: 15px;
     }

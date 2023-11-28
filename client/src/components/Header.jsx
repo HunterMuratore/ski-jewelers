@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
+import logo from '../assets/img/logo_white.png'
+
 const links = [
     { name: 'Home', to: '/' },
     { name: 'Gift Ideas', to: '/gifts' },
@@ -19,7 +21,7 @@ function Header() {
     return (
         <header className="m-6 rounded-md">
             <nav className="flex items-center justify-between rounded-md py-1 pl-3 pr-3">
-                <NavLink to="/"><img src="" alt="Ski Jewelers Logo" /></NavLink>
+                <NavLink to="/"><img src={logo} alt="Ski Jewelers Logo" /></NavLink>
 
                 {/* Hamburger menu icon for medium screens and below */}
                 <div className="lg:hidden py-3">

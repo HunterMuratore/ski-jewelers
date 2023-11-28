@@ -2,27 +2,27 @@ const staff = [
     {
         name: 'Angela',
         img: '',
-        description: 'Angela has been with us for 2 years. She greats everyone who walks in a with a big smile and loves helping customers find the perfect piece of jewelery.'
+        description: 'Angela has been with us for 2 years. She greets everyone who walks in a with a big smile and loves helping customers find the perfect piece of jewelery.'
     },
     {
         name: 'Angela',
         img: '',
-        description: 'Angela has been with us for 2 years. She greats everyone who walks in a with a big smile and loves helping customers find the perfect piece of jewelery.'
+        description: 'Angela has been with us for 2 years. She greets everyone who walks in a with a big smile and loves helping customers find the perfect piece of jewelery.'
     },
     {
         name: 'Angela',
         img: '',
-        description: 'Angela has been with us for 2 years. She greats everyone who walks in a with a big smile and loves helping customers find the perfect piece of jewelery.'
+        description: 'Angela has been with us for 2 years. She greets everyone who walks in a with a big smile and loves helping customers find the perfect piece of jewelery.'
     },
     {
         name: 'Angela',
         img: '',
-        description: 'Angela has been with us for 2 years. She greats everyone who walks in a with a big smile and loves helping customers find the perfect piece of jewelery.'
+        description: 'Angela has been with us for 2 years. She greets everyone who walks in a with a big smile and loves helping customers find the perfect piece of jewelery.'
     },
     {
         name: 'Angela',
         img: '',
-        description: 'Angela has been with us for 2 years. She greats everyone who walks in a with a big smile and loves helping customers find the perfect piece of jewelery.'
+        description: 'Angela has been with us for 2 years. She greets everyone who walks in a with a big smile and loves helping customers find the perfect piece of jewelery.'
     },
 ]
 
