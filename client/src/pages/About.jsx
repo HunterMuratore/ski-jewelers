@@ -1,17 +1,11 @@
 import Map from '../components/Map'
 
-import jimmy from '../assets/staff/jimmy.jpg'
-
-// {
-//     name: 'Angela',
-//     img: '',
-//     description: 'Angela has been with us for 2 years. She greets everyone who walks in a with a big smile and loves helping customers find the perfect piece of jewelery.'
-// },
+import joe from '../assets/staff/joe.jpg'
 
 const staff = [
     {
-        name: 'Jimmy',
-        img: jimmy,
+        name: 'Joe',
+        img: joe,
         description: ''
     },
 ]
