@@ -1,8 +1,14 @@
 import Map from '../components/Map'
 
 import joe from '../assets/staff/joe.jpg'
+import jimmy from '../assets/staff/jimmy.jpg'
 
 const staff = [
+    {
+        name: 'Jimmy',
+        img: jimmy,
+        description: ''
+    },
     {
         name: 'Joe',
         img: joe,
