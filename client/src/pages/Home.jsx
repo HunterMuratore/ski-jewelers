@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 
+import Partners from '../components/Partners'
+
 import storefront from '../assets/store/storefront.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -31,8 +33,14 @@ function Home() {
         <>
             <section className="home mx-auto main-padding flex flex-col items-center gap-6 text-center mb-3">
                 <div>
-                    <h1 className="text-3xl font-bold mt-5 mb-5">Ski Jewelers</h1>
-                    <h2 className="text-2xl font-semibold mt-5 mb-5">Integrity Shines in Every Piece.</h2>
+                    <h1 className="text-4xl font-bold mt-5 mb-5">Ski Jewelers</h1>
+
+                    <h2 className="text-3xl font-semibold mt-5 mb-5">Integrity Shines in Every Piece</h2>
+
+                    <h2 className="text-2xl font-semibold mt-5 mb-5">We Buy <span className='gold'>Gold</span> and <span className='silver'>Silver</span></h2>
+
+                    <h2 className="text-xl font-semibold mt-5 mb-5">Visit Us For Appraisals</h2>
+
                     <h2 className={`text-lg mt-5 mb-2 ${showDropdown ? 'text-bold' : ''}`}>Today's Hours: {currentHours}<FontAwesomeIcon className="ml-2 dropdown" onClick={() => setShowDropdown(!showDropdown)} icon={showDropdown ? faCaretUp : faCaretDown} /></h2>
                     {showDropdown && (
                         <div className="mt-2">
@@ -56,6 +64,11 @@ function Home() {
                 </div>
 
                 <h2 className="map-link mt-1 text-lg"><a href="https://maps.app.goo.gl/9tQtgMEa8zU6ACAf6" target="_blank">299 Highway 22 East, Green Brook Township, NJ 08812<FontAwesomeIcon className="ml-1 pin-icon" icon={faMapPin} bounce /></a></h2>
+            </section>
+
+            <section className='mt-16'>
+                <h3 className='text-lg text-center'>Outside venders we deal with</h3>
+                <Partners />
             </section>
         </>
     )

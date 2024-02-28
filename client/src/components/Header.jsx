@@ -19,8 +19,8 @@ function Header() {
     };
 
     return (
-        <header className="m-6 rounded-md">
-            <nav className="flex items-center justify-between rounded-md py-1 pl-3 pr-3">
+        <header className="">
+            <nav className="flex items-center justify-between py-1 pl-3 pr-3">
                 <NavLink to="/"><img src={logo} alt="Ski Jewelers Logo" /></NavLink>
 
                 {/* Hamburger menu icon for medium screens and below */}
@@ -71,7 +71,7 @@ function Header() {
             </nav>
 
             {/* Navigation links dropdown menu for medium screens and below */}
-            <nav className={`${isOpen ? 'flex flex-col' : 'hidden'} dropdown rounded lg:hidden p-3`}>
+            <nav className={`${isOpen ? 'flex flex-col' : 'hidden'} dropdown lg:hidden p-3`}>
                 {links.map((link, i) => (
                     <NavLink key={i} to={link.to} className="py-1" onClick={toggleMenu}>
                         {link.name}
