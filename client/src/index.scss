@@ -182,6 +182,12 @@ header {
   }
 }
 
+.custom {
+  .image {
+    max-width: 600px;
+  }
+}
+
 footer {
   p {
     font-size: 12px;

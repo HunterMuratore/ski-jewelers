@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Specials from './pages/Specials'
+import Custom from './pages/Custom'
 import Gifts from './pages/Gifts'
 import Contact from './pages/Contact'
 import Success from './pages/Success'
@@ -23,6 +24,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/specials' element={<Specials />} />
+          <Route path='/custom' element={<Custom />} />
           <Route path='/gifts' element={<Gifts />} />
           <Route path='/success' element={<Success />} />
           <Route path='/error' element={<Error />} />

@@ -39,7 +39,7 @@ function Home() {
 
                     <h2 className="text-2xl font-semibold my-5">We Buy <span className='gold'>Gold</span> and <span className='silver'>Silver</span></h2>
 
-                    <h2 className="text-xl font-semibold my-5">Visit Us For Appraisals</h2>
+                    <h2 className="text-xl font-semibold my-5">Professional Jewelry Appraisals for Insurance Coverage</h2>
 
                     <h2 className={`text-lg mt-5 mb-2 ${showDropdown ? 'text-bold' : ''}`}>Today's Hours: {currentHours}<FontAwesomeIcon className="ml-2 dropdown" onClick={() => setShowDropdown(!showDropdown)} icon={showDropdown ? faCaretUp : faCaretDown} /></h2>
                     {showDropdown && (
