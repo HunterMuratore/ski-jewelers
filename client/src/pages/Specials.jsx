@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 // Stone of the month jewelery
 import garnet from '../assets/jewelery/garnet.jpg'
 import amethyst from '../assets/jewelery/amethyst.jpg'
+import aquamarine from '../assets/jewelery/aquamarine_necklace.jpg'
 
 // Specials jewelery
 import heart_pink from '../assets/jewelery/heart_pink.jpg'
@@ -21,7 +22,7 @@ const specials = {
   },
   march: {
     stone: "Aquamarine",
-    image: "",
+    image: aquamarine,
     color: "#ADD8E6" // Light blue
   },
   april: {
