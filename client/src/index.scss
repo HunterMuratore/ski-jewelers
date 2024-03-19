@@ -104,8 +104,20 @@ header {
     color: $theme-accent;
   }
 
-  .storefront {
-    max-width: 750px;
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .carousel-dot.active {
+    width: 12px;
+    height: 12px;
+    background-color: #333;
   }
 
   .map-link a {

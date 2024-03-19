@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react'
 
 import Partners from '../components/Partners'
-
-import storefront from '../assets/store/storefront.jpg'
+import Carousel from '../components/Carousel'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapPin, faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons'
@@ -59,9 +58,7 @@ function Home() {
                     )}
                 </div>
 
-                <div className='storefront px-5'>
-                    <img src={storefront} alt="Store Front" />
-                </div>
+                <Carousel />
 
                 <h2 className="map-link mt-1 text-lg"><a href="https://maps.app.goo.gl/9tQtgMEa8zU6ACAf6" target="_blank">299 Highway 22 East, Green Brook Township, NJ 08812<FontAwesomeIcon className="ml-1 pin-icon" icon={faMapPin} bounce /></a></h2>
             </section>
