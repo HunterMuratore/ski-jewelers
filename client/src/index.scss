@@ -104,6 +104,10 @@ header {
     color: $theme-accent;
   }
 
+  .carousel {
+    max-width: 1000px;
+  }
+
   .carousel-dot {
     width: 10px;
     height: 10px;

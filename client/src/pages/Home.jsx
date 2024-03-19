@@ -58,7 +58,9 @@ function Home() {
                     )}
                 </div>
 
-                <Carousel />
+                <div className='carousel mx-auto'>
+                    <Carousel />
+                </div>
 
                 <h2 className="map-link mt-1 text-lg"><a href="https://maps.app.goo.gl/9tQtgMEa8zU6ACAf6" target="_blank">299 Highway 22 East, Green Brook Township, NJ 08812<FontAwesomeIcon className="ml-1 pin-icon" icon={faMapPin} bounce /></a></h2>
             </section>
