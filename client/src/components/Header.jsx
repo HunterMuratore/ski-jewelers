@@ -6,7 +6,7 @@ import logo from '../assets/logos/logo_white.png'
 const links = [
     { name: 'Home', to: '/' },
     // { name: 'Gift Ideas', to: '/gifts' },
-    { name: 'Specials', to: '/specials' },
+    // { name: 'Specials', to: '/specials' },
     { name: 'Custom Jewelry', to: '/custom' },
     { name: 'About Us', to: '/about' },
     { name: 'Contact', to: '/contact' },

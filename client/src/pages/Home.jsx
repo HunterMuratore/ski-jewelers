@@ -40,6 +40,11 @@ function Home() {
 
                     <h2 className="text-xl font-semibold my-5">Professional Jewelry Appraisals for Insurance Coverage</h2>
 
+                    {/* <div className='holiday-hours border border-white'>
+                        <h2 className="text-xl font-semibold mt-5 mb-2">Holiday Hours Saturday, 3/30/2024</h2>
+                        <h2 className="text-lg font-semibold mb-5">10:00 am - 3:00 pm</h2>
+                    </div> */}
+
                     <h2 className={`text-lg mt-5 mb-2 ${showDropdown ? 'text-bold' : ''}`}>Today's Hours: {currentHours}<FontAwesomeIcon className="ml-2 dropdown" onClick={() => setShowDropdown(!showDropdown)} icon={showDropdown ? faCaretUp : faCaretDown} /></h2>
                     {showDropdown && (
                         <div className="mt-2">
