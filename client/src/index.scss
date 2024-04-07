@@ -96,6 +96,14 @@ header {
     color: rgb(190, 189, 189);
   }
 
+  .gold-silver {
+    transform: rotate(-25deg) translate(30px, 30px);
+  }
+
+  .gold-silver-2 {
+    transform: rotate(25deg) translate(-30px, 30px);
+  }
+
   img {
     border-radius: 6px;
   }

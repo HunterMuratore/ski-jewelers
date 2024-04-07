@@ -4,11 +4,9 @@ import storefront from '../assets/store/storefront.jpg'
 import seiko_watch from '../assets/jewelery/seiko_watch.jpg'
 import diamond_earrings_necklace from '../assets/jewelery/diamond_earrings_necklace.jpg'
 import diamond_bracelets_4 from '../assets/jewelery/diamond_bracelets_4.jpg'
-// import heart_pink from '../assets/jewelery/heart_pink.jpg'
 
 const images = [
     { src: storefront, alt: 'Storefront' },
-    // { src: heart_pink, alt: 'Pink Heart Necklace' },
     { src: seiko_watch, alt: 'Seiko Watch' },
     { src: diamond_bracelets_4, alt: 'Diamond Bracelets on Wrist' },
     { src: diamond_earrings_necklace, alt: 'Diamond Earrings and Necklace' },
