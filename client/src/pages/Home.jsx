@@ -57,12 +57,14 @@ function Home() {
 
                     <h2 className="text-xl font-semibold my-4">Professional Jewelry Appraisals for Insurance Coverage</h2>
 
-                    {/* <div className='holiday-hours border border-white'>
-                        <h2 className="text-xl font-semibold mt-4 mb-2">Holiday Hours Saturday, 3/30/2024</h2>
-                        <h2 className="text-lg font-semibold mb-4">10:00 am - 3:00 pm</h2>
-                    </div> */}
+                    <div className='holiday-hours mt-4 mb-3 px-4 border border-white'>
+                        <h2 className="text-xl font-semibold text-red-400 mt-4 mb-2">Holiday Hours:</h2>
+                        <h2 className="text-lg font-semibold mb-4"><span className='text-green-400'>Sunday</span> (12/22/24): 11:00 am - 4:00 pm</h2>
+                        <h2 className="text-lg font-semibold mb-4"><span className='text-green-400'>Monday</span> (12/23/24): 10:00 am - 8:00 pm</h2>
+                        <h2 className="text-lg font-semibold mb-4"><span className='text-green-400'>Tuesday</span> (12/24/24): 10:00 am - 3:00 pm</h2>
+                    </div>
 
-                    <h2 className={`text-lg mt-4 mb-3 ${showDropdown ? 'text-bold' : ''}`}>Today's Hours: {currentHours}<FontAwesomeIcon className="ml-2 dropdown" onClick={() => setShowDropdown(!showDropdown)} icon={showDropdown ? faCaretUp : faCaretDown} /></h2>
+                    {/* <h2 className={`text-lg mt-4 mb-3 ${showDropdown ? 'text-bold' : ''}`}>Today's Hours: {currentHours}<FontAwesomeIcon className="ml-2 dropdown" onClick={() => setShowDropdown(!showDropdown)} icon={showDropdown ? faCaretUp : faCaretDown} /></h2>
                     {showDropdown && (
                         <div className="mt-2 mb-4">
                             <h3 className="font-semibold">Hours for Each Day:</h3>
@@ -77,7 +79,7 @@ function Home() {
                                 ))}
                             </ul>
                         </div>
-                    )}
+                    )} */}
 
                     <div className='carousel mx-auto'>
                         <Carousel />
